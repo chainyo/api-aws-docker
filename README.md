@@ -10,12 +10,7 @@
 
 You can access the API by following this [link](http://ec2-3-22-236-105.us-east-2.compute.amazonaws.com).
 
-You will land on this root page:
-
-![Root Api](./resources/root_api.png)
-
-Then you can check the documentation, click [here](http://ec2-3-22-236-105.us-east-2.compute.amazonaws.com/docs).  
-This is the documentation page:
+You will land on the documentation page.  
 
 ![Api Documentation](./resources/api_docs.png)
 
