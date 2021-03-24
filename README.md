@@ -19,7 +19,7 @@ This is the documentation page:
 
 ![Api Documentation](./resources/api_docs.png)
 
-## Some endpoints
+## Endpoints
 
 - **Get all members** - [link](http://ec2-3-22-236-105.us-east-2.compute.amazonaws.com/api/v1/members)  
 
@@ -36,3 +36,8 @@ This is the documentation page:
 - **Get all bookings** - [link](http://ec2-3-22-236-105.us-east-2.compute.amazonaws.com/api/v1/bookings)
 
 ![Bookings](./resources/all_bookings.png)
+
+---
+
+Feel free to star this repository or fork it if you find it usefull.  
+Cheers!   
