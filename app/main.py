@@ -1,16 +1,17 @@
 from fastapi import FastAPI
+from starlette.responses import RedirectResponse
 from connection import DB
 
 app = FastAPI(
     title="API Tennis",
     description="Microsoft AI by Simplon - AWS Infrastructure Cloud",
-    version="1.0"
-    openapi_url="/api/v1/openapi.json"
+    version="1.0",
+    openapi_url="/api/v1/openapi.json",
 )
 
-@app.get("/", tags=['Home'])
+@app.get("/", include_in_schema=False)
 def home():
-    return {"Bienvenue sur l'API":"Check les docs pour plus de fun"}
+    return RedirectResponse("/docs")
 
 @app.get("/api/v1/members", tags=['People'])
 def get_members():
