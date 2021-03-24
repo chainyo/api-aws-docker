@@ -5,6 +5,7 @@ app = FastAPI(
     title="API Tennis",
     description="Microsoft AI by Simplon - AWS Infrastructure Cloud",
     version="1.0"
+    openapi_url="/api/v1/openapi.json"
 )
 
 @app.get("/", tags=['Home'])
