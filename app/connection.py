@@ -1,15 +1,19 @@
 import psycopg2
+import os 
+
+from dotenv import load_dotenv
 
 class DB():
 
     @classmethod
     def open_con(cls):
+        load_dotenv()
         cls.con = psycopg2.connect(
-            database="exercises", 
-            user="postgres", 
-            password="123456789", 
-            host="brief.crpjihsrdbrj.eu-west-3.rds.amazonaws.com", 
-            port="5431")
+            database=os.getenv("DATABASE"), 
+            user=os.getenv("USER"), 
+            password=os.getenv("PASSWORD"), 
+            host=os.getenv("HOST"), 
+            port=os.getenv("PORT"))
         print("Connection opened successfully.")
         cls.cur = cls.con.cursor()
 
