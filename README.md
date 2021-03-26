@@ -6,7 +6,7 @@
 
 - **Application:** we created a reverse proxy with `Nginx` and an API with `FastApi`, they are both running on a virtual machine one an EC2 instance on AWS.
 
-## Database initialisation storage
+## Database initialization storage
 
 In order to store our sql initialization file, we created an Amazon S3 bucket. Then we just had to drag&drop the file on the S3 interface.
 
